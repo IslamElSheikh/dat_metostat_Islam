@@ -1,4 +1,4 @@
-{{ config(materialized='view', schema='s_islamelsheikh') }}
+{{ config(materialized='view'}}
 
 WITH flights_one_month AS (
     SELECT * 
