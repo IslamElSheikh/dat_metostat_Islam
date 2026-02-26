@@ -1,3 +1,5 @@
+{{ config(materialized='view', schema='s_islamelsheikh') }}
+
 WITH airports_regions_join AS (
     SELECT * 
     FROM {{source('flights_data', 'airports')}}
